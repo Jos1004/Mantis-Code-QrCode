@@ -3,6 +3,11 @@ body{
     background-color: #CADBEF;
     justify-content: center;
     align-items: center;
+    font-family: "Outfit", sans-serif !important;
+    display:flex !important;
+    align-item: center !important;
+    justify-content: center !important;
+    align-content: center !important;
 }
 
 .card{
@@ -135,3 +140,4 @@ p{
     }
 
 }
+
