@@ -18,7 +18,7 @@ body{
 
 .card-header{
     display: flex;
-    background-color: #048EDD;
+    background-color: #027BCE;
     overflow: hidden;
     position: relative;
     height: 12em;
@@ -33,7 +33,7 @@ body{
 }
 
 .bola{
-    background-color: #0B9AEC; /*#027BCE*/
+    background-color: #3685FF; /*#027BCE*/
     border-radius: 90px;
     width: 100%;
     height: 100%;
@@ -127,10 +127,11 @@ p{
 
 @media (max-width: 600px) {
     .card-header{
-        background-color: #0B9AEC;
+        background-color: #3685FF;
     }
 
     .bola{
-        background-color: #048EDD;
+        background-color: #2C7DFA;
     }
+
 }
