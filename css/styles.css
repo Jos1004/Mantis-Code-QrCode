@@ -1,31 +1,36 @@
 body{
+    margin: 0;
+    height: 100vh;
     display: flex;
     background-color: #CADBEF;
     justify-content: center;
-    align-items: center;
+    align-items: center !important;
+    align-content: center !important;
     font-family: "Outfit", sans-serif !important;
 }
 
 .card{
-    width: 13rem;
-    height: 21rem;
+    width: 320px;
+    height: 502px;
     border-radius: 1em;
-    display: flex;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    position: relative;
-    top: 7rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
     text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 10px;
 }
 
 .card-header{
     display: flex;
-    background-color: #027BCE;
+    align-items: center;
+    justify-content: center;
+    background-color: #2C7DFA;
     overflow: hidden;
     position: relative;
-    height: 12em;
-    width: 12em;
-    left:0.45em;
-    top: 0.5em;
+    height: 288px;
+    width: 288px;
+    top: 0.9em;
     border: 3px solid #fff;
 }
 
@@ -35,15 +40,15 @@ body{
 
 .bola{
     background-color: #3685FF;
-    border-radius: 90px;
+    border-radius: 50%;
     width: 100%;
     height: 100%;
     position: absolute;
     left: -40%;
     top: -45%;
     z-index: 0;
-
 }
+
 #m1{
     animation-name: move;
     animation-duration: 4s;
@@ -51,7 +56,7 @@ body{
     animation-timing-function: ease-in-out;
     animation-delay: 1s;
 }
-/*caso não queira animação é só tirar o @keyframe*/
+/*caso não queira animação é só tirar os @keyframes*/
 @keyframes move {
     0%{
         transform: translateX(0%);
@@ -104,25 +109,22 @@ body{
 
 #code{
    z-index: 2;
-   width: 6em;
-   height: 6em;
-   margin-left: 2em;
-   margin-top: 2.5em;
+   width: 160px;
+   height: 160px;
 }
 
 p{
-    font-size:0.65em;
-    position: relative;
-    top:2em;
-    left: 1rem;
-    width: 11rem;
+    font-size:15px;
+    width: 16rem;
     color: #7D889E;
+    margin: 0;
 }
 
 #titulo{
-    font-size: 0.8em;
-    font-weight: 800;
+    font-size: 22px;
+    font-weight: 700;
     color: #1F314F;
+    margin-top: 1em ;
 }
 
 @media (max-width: 600px) {
@@ -133,8 +135,5 @@ p{
     .bola{
         background-color: #2C7DFA;
     }
-
 }
-
-
 
